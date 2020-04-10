@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     private fun initializePlayer() {
         player = ExoPlayerFactory.newSimpleInstance(this)
         playerView!!.player = player
-        val uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/mentorpodium.appspot.com/o/posts%2FKKHWfCAX1hVoAYKF8RlPaCWCCsD2%2Fvideos%2Fsave_1585499153575.mp4?alt=media&token=79080691-3667-4ea6-b824-d13b3806d32b")
+        val uri = Uri.parse("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
         val mediaSource = buildMediaSource(uri)
         player!!.playWhenReady = playWhenReady
         player!!.seekTo(currentWindow, playbackPosition)
